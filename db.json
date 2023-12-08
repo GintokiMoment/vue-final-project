@@ -1,11 +1,125 @@
 {
-    "users":[
-        {"id": 7, "firstName":"Bob", "lastName":"Smith", "email":"bob@smith.com", "password":"test", "roleId":1, "active": true},
-        {"id": 96, "firstName":"Betty", "lastName":"Smith", "email":"betty@smith.com", "password":"test", "roleId":2, "active": true},
-        {"id": 33, "firstName":"Barney", "lastName":"Smith", "email":"barney@smith.com", "password":"test", "roleId":1, "active": false}
-    ],
-    "roles":[
-        {"id": 1, "name": "Standard User", "description": "A standard user"},
-        {"id": 2, "name": "Admin", "description": "A user with elevated permissions"}
-    ]
+  "users": [
+    {
+      "id": 7,
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "email": "bob@smith.com",
+      "password": "test",
+      "roleId": 2,
+      "active": true
+    },
+    {
+      "id": 96,
+      "firstName": "Betty",
+      "lastName": "Smith",
+      "email": "betty@smith.com",
+      "password": "giggler",
+      "roleId": 2,
+      "active": true
+    },
+    {
+      "id": 33,
+      "firstName": "Barney",
+      "lastName": "Smith",
+      "email": "barney@smith.com",
+      "password": "test",
+      "roleId": 1,
+      "active": false
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "Standard User",
+      "description": "A standard user"
+    },
+    {
+      "id": 2,
+      "name": "Admin",
+      "description": "A user with elevated permissions"
+    }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Buddy",
+      "species": "Dog",
+      "age": 3,
+      "availableForAdoption": true
+    },
+    {
+      "id": 2,
+      "name": "Whiskers",
+      "species": "Cat",
+      "age": 2,
+      "availableForAdoption": true
+    },
+    {
+      "id": 3,
+      "name": "Fluffer Guy",
+      "species": "Rabbit",
+      "age": 1,
+      "availableForAdoption": true
+    },
+    {
+      "id": 4,
+      "name": "Mr. Macaw",
+      "species": "Bird",
+      "age": 23,
+      "availableForAdoption": true
+    },
+    {
+      "id": 5,
+      "name": "Spotter",
+      "species": "Dog",
+      "age": 4,
+      "availableForAdoption": true
+    },
+    {
+      "id": 6,
+      "name": "Ziggy",
+      "species": "Cat",
+      "age": 5,
+      "availableForAdoption": true
+    }
+  ],
+  "animal_vaccinations": [
+    {
+      "id": 1,
+      "animalId": 1,
+      "vaccinationName": "Rabies",
+      "vaccinationDate": "2020-01-15"
+    },
+    {
+      "id": 2,
+      "animalId": 2,
+      "vaccinationName": "Feline Distemper",
+      "vaccinationDate": "2023-10-08"
+    },
+    {
+      "id": 3,
+      "animalId": 3,
+      "vaccinationName": "Rabbit Myxomatosis",
+      "vaccinationDate": "2020-12-20"
+    },
+    {
+      "id": 4,
+      "animalId": 4,
+      "vaccinationName": "Avian Influenza",
+      "vaccinationDate": "2006-05-01"
+    },
+    {
+      "id": 5,
+      "animalId": 5,
+      "vaccinationName": "Canine Parvovirus",
+      "vaccinationDate": "2021-10-05"
+    },
+    {
+      "id": 6,
+      "animalId": 6,
+      "vaccinationName": "Feline Leukemia",
+      "vaccinationDate": "2021-01-10"
+    }
+  ]
 }
