@@ -6,8 +6,13 @@
         </router-link>
   
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
+
+        <span class="firstName" v-if="GStore.currentUser">
+            <b>Hello, {{GStore.currentUser.firstName}} &nbsp;</b> 
+            <i class="fa fa-paw"></i>
+        </span>
   
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
@@ -54,7 +59,6 @@ export default {
     transition: height 0.3s ease-in-out;
   }
   
-  /* Override the default collapsed styles */
   .collapsing {
     height: 0;
     overflow: hidden;
@@ -63,7 +67,9 @@ export default {
   .navbar-nav .btn {
     background-color: whitesmoke;
     color: rgb(66, 82, 96);
-    font-family: 'Georgia', sans-serif; /* Replace 'Your New Font' with the actual font you want to use */
+    font-family: 'Georgia', sans-serif; 
+    margin: 5px;
+
   }
 
   .navbar-brand {
@@ -77,5 +83,10 @@ export default {
   .cat-paw-icon {
     font-size: 1.5em; 
     margin-left: 0.5em; 
+  }
+
+  .firstName {
+    margin-top: 5px;
+    font-family: "Trebuchet MS", sans-serif;
   }
 </style>
